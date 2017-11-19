@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ID_PRACOWNIKA: 1
+  ID_REST: 1
+  ID_TYPU: 1
+  IMIE: MyString
+  NAZWISKO: MyString
+  ZAROBKI: 1
+
+two:
+  ID_PRACOWNIKA: 1
+  ID_REST: 1
+  ID_TYPU: 1
+  IMIE: MyString
+  NAZWISKO: MyString
+  ZAROBKI: 1

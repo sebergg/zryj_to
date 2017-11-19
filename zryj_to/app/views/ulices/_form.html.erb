@@ -1,0 +1,33 @@
+<%= form_for(@ulice) do |f| %>
+  <% if @ulice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ulice.errors.count, "error") %> prohibited this ulice from being saved:</h2>
+
+      <ul>
+      <% @ulice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ID_ULICY %><br>
+    <%= f.number_field :ID_ULICY %>
+  </div>
+  <div class="field">
+    <%= f.label :ULICA %><br>
+    <%= f.text_field :ULICA %>
+  </div>
+  <div class="field">
+    <%= f.label :KOD_POCZTOWY %><br>
+    <%= f.text_field :KOD_POCZTOWY %>
+  </div>
+  <div class="field">
+    <%= f.label :NUMER_LOKALU %><br>
+    <%= f.text_field :NUMER_LOKALU %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

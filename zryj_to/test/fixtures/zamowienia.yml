@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ID_ZAMOWIENIA: 1
+  ID_KLIENTA: 1
+  ID_PRACOWNIKA: 1
+  CZAS_REALIZACJI: 1
+
+two:
+  ID_ZAMOWIENIA: 1
+  ID_KLIENTA: 1
+  ID_PRACOWNIKA: 1
+  CZAS_REALIZACJI: 1

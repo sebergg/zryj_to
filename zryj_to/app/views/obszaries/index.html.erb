@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Obszaries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id obszaru</th>
+      <th>Nazwa obszaru</th>
+      <th>Id ulicy</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @obszaries.each do |obszary| %>
+      <tr>
+        <td><%= obszary.ID_OBSZARU %></td>
+        <td><%= obszary.NAZWA_OBSZARU %></td>
+        <td><%= obszary.ID_ULICY %></td>
+        <td><%= link_to 'Show', obszary %></td>
+        <td><%= link_to 'Edit', edit_obszary_path(obszary) %></td>
+        <td><%= link_to 'Destroy', obszary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Obszary', new_obszary_path %>

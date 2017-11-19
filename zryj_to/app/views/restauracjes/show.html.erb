@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id rest:</strong>
+  <%= @restauracje.ID_REST %>
+</p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @restauracje.NAZWA %>
+</p>
+
+<p>
+  <strong>Id obszaru:</strong>
+  <%= @restauracje.ID_OBSZARU %>
+</p>
+
+<p>
+  <strong>Ulica:</strong>
+  <%= @restauracje.ULICA %>
+</p>
+
+<p>
+  <strong>Numer lokalu:</strong>
+  <%= @restauracje.NUMER_LOKALU %>
+</p>
+
+<p>
+  <strong>Kod pocztowy:</strong>
+  <%= @restauracje.KOD_POCZTOWY %>
+</p>
+
+<%= link_to 'Edit', edit_restauracje_path(@restauracje) %> |
+<%= link_to 'Back', restauracjes_path %>

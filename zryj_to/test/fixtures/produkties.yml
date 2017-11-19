@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ID_PROD: 1
+  NAZWA: MyString
+  CENA: 1.5
+  CZAS_PRZYG: 1
+
+two:
+  ID_PROD: 1
+  NAZWA: MyString
+  CENA: 1.5
+  CZAS_PRZYG: 1

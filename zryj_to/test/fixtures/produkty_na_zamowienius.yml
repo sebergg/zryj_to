@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ID_ZAMOWIENIA: 1
+  ID_PROD: 1
+  LICZBA_SZTUK: 1
+
+two:
+  ID_ZAMOWIENIA: 1
+  ID_PROD: 1
+  LICZBA_SZTUK: 1

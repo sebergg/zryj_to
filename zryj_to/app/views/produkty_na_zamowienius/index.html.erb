@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Produkty Na Zamowienius</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id zamowienia</th>
+      <th>Id prod</th>
+      <th>Liczba sztuk</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @produkty_na_zamowienius.each do |produkty_na_zamowieniu| %>
+      <tr>
+        <td><%= produkty_na_zamowieniu.ID_ZAMOWIENIA %></td>
+        <td><%= produkty_na_zamowieniu.ID_PROD %></td>
+        <td><%= produkty_na_zamowieniu.LICZBA_SZTUK %></td>
+        <td><%= link_to 'Show', produkty_na_zamowieniu %></td>
+        <td><%= link_to 'Edit', edit_produkty_na_zamowieniu_path(produkty_na_zamowieniu) %></td>
+        <td><%= link_to 'Destroy', produkty_na_zamowieniu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Produkty na zamowieniu', new_produkty_na_zamowieniu_path %>

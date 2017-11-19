@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Zamowienia</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id zamowienia</th>
+      <th>Id klienta</th>
+      <th>Id pracownika</th>
+      <th>Czas realizacji</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zamowienia.each do |zamowienium| %>
+      <tr>
+        <td><%= zamowienium.ID_ZAMOWIENIA %></td>
+        <td><%= zamowienium.ID_KLIENTA %></td>
+        <td><%= zamowienium.ID_PRACOWNIKA %></td>
+        <td><%= zamowienium.CZAS_REALIZACJI %></td>
+        <td><%= link_to 'Show', zamowienium %></td>
+        <td><%= link_to 'Edit', edit_zamowienium_path(zamowienium) %></td>
+        <td><%= link_to 'Destroy', zamowienium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zamowienium', new_zamowienium_path %>

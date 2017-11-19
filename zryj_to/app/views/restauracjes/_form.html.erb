@@ -1,0 +1,41 @@
+<%= form_for(@restauracje) do |f| %>
+  <% if @restauracje.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@restauracje.errors.count, "error") %> prohibited this restauracje from being saved:</h2>
+
+      <ul>
+      <% @restauracje.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ID_REST %><br>
+    <%= f.number_field :ID_REST %>
+  </div>
+  <div class="field">
+    <%= f.label :NAZWA %><br>
+    <%= f.text_field :NAZWA %>
+  </div>
+  <div class="field">
+    <%= f.label :ID_OBSZARU %><br>
+    <%= f.number_field :ID_OBSZARU %>
+  </div>
+  <div class="field">
+    <%= f.label :ULICA %><br>
+    <%= f.text_field :ULICA %>
+  </div>
+  <div class="field">
+    <%= f.label :NUMER_LOKALU %><br>
+    <%= f.text_field :NUMER_LOKALU %>
+  </div>
+  <div class="field">
+    <%= f.label :KOD_POCZTOWY %><br>
+    <%= f.text_field :KOD_POCZTOWY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

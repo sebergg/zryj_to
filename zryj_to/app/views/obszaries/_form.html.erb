@@ -1,0 +1,29 @@
+<%= form_for(@obszary) do |f| %>
+  <% if @obszary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@obszary.errors.count, "error") %> prohibited this obszary from being saved:</h2>
+
+      <ul>
+      <% @obszary.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ID_OBSZARU %><br>
+    <%= f.number_field :ID_OBSZARU %>
+  </div>
+  <div class="field">
+    <%= f.label :NAZWA_OBSZARU %><br>
+    <%= f.text_field :NAZWA_OBSZARU %>
+  </div>
+  <div class="field">
+    <%= f.label :ID_ULICY %><br>
+    <%= f.number_field :ID_ULICY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

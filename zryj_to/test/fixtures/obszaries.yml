@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ID_OBSZARU: 1
+  NAZWA_OBSZARU: MyString
+  ID_ULICY: 1
+
+two:
+  ID_OBSZARU: 1
+  NAZWA_OBSZARU: MyString
+  ID_ULICY: 1

@@ -1,0 +1,33 @@
+<%= form_for(@zamowienium) do |f| %>
+  <% if @zamowienium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@zamowienium.errors.count, "error") %> prohibited this zamowienium from being saved:</h2>
+
+      <ul>
+      <% @zamowienium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ID_ZAMOWIENIA %><br>
+    <%= f.number_field :ID_ZAMOWIENIA %>
+  </div>
+  <div class="field">
+    <%= f.label :ID_KLIENTA %><br>
+    <%= f.number_field :ID_KLIENTA %>
+  </div>
+  <div class="field">
+    <%= f.label :ID_PRACOWNIKA %><br>
+    <%= f.number_field :ID_PRACOWNIKA %>
+  </div>
+  <div class="field">
+    <%= f.label :CZAS_REALIZACJI %><br>
+    <%= f.number_field :CZAS_REALIZACJI %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

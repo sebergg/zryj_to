@@ -1,0 +1,29 @@
+<%= form_for(@produkty_na_zamowieniu) do |f| %>
+  <% if @produkty_na_zamowieniu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@produkty_na_zamowieniu.errors.count, "error") %> prohibited this produkty_na_zamowieniu from being saved:</h2>
+
+      <ul>
+      <% @produkty_na_zamowieniu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ID_ZAMOWIENIA %><br>
+    <%= f.number_field :ID_ZAMOWIENIA %>
+  </div>
+  <div class="field">
+    <%= f.label :ID_PROD %><br>
+    <%= f.number_field :ID_PROD %>
+  </div>
+  <div class="field">
+    <%= f.label :LICZBA_SZTUK %><br>
+    <%= f.number_field :LICZBA_SZTUK %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id zamowienia:</strong>
+  <%= @produkty_na_zamowieniu.ID_ZAMOWIENIA %>
+</p>
+
+<p>
+  <strong>Id prod:</strong>
+  <%= @produkty_na_zamowieniu.ID_PROD %>
+</p>
+
+<p>
+  <strong>Liczba sztuk:</strong>
+  <%= @produkty_na_zamowieniu.LICZBA_SZTUK %>
+</p>
+
+<%= link_to 'Edit', edit_produkty_na_zamowieniu_path(@produkty_na_zamowieniu) %> |
+<%= link_to 'Back', produkty_na_zamowienius_path %>
